@@ -14,22 +14,22 @@ describe('Ogre', function() {
   });
 
   it.skip('should have a name', function() {
-    var ogre = new Ogre('Brak');
-    assert.equal(ogre.name, 'Brak');
+    var ogre = new Ogre('Shrek');
+    assert.equal(ogre.name, 'Shrek');
   });
 
   it.skip('should live in a Swamp by default', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     assert.equal(ogre.home, 'Swamp');
   });
 
   it.skip('does not have to live in a swamp', function() {
-    var ogre = new Ogre('Brak', 'The Ritz');
+    var ogre = new Ogre('Shrek', 'The Ritz');
     assert.equal(ogre.home, 'The Ritz');
   });
 
   it.skip('it can meet humans', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     var human = new Human('Jane');
 
     assert.equal(human.name, 'Jane');
@@ -39,7 +39,7 @@ describe('Ogre', function() {
   });
 
   it.skip('humans should only notice an ogre every third encounter', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     var human = new Human('Jane');
 
     ogre.encounter(human);
@@ -51,7 +51,7 @@ describe('Ogre', function() {
   });
 
   it.skip('human notices ogre on the sixth encounter', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     var human = new Human('Jane');
 
     assert.equal(human.noticesOgre(), false);
@@ -70,7 +70,7 @@ describe('Ogre', function() {
   });
 
   it.skip('can swing a club', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     var human = new Human('Jane');
 
     ogre.swingAt(human);
@@ -79,7 +79,7 @@ describe('Ogre', function() {
   });
 
   it.skip('ogre swings the club when a human notices it', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     var human = new Human('Jane');
 
     ogre.encounter(human);
@@ -93,7 +93,7 @@ describe('Ogre', function() {
   });
 
   it.skip('ogre hits human every second time it swings', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     var human = new Human('Jane');
 
     ogre.encounter(human);
@@ -109,7 +109,7 @@ describe('Ogre', function() {
   });
 
   it.skip('human wakes up when ogre apologizes', function() {
-    var ogre = new Ogre('Brak');
+    var ogre = new Ogre('Shrek');
     var human = new Human('Jane');
 
     ogre.apologize(human);
